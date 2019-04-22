@@ -1,0 +1,84 @@
+body {
+  background-color: #000;
+  margin:0px;
+  font-family:微軟正黑體, 標楷體, 新細明體;
+  text-align:center;
+}
+
+/*設定主體參數*/
+#odercards {
+  color:#e2e2e0;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:fixed;
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+/*設定動畫主體參數*/
+#con {
+  height:50px;
+  overflow:hidden;
+}
+
+/*設定動畫字體*/
+#con > div > div {
+  color:#31312f;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+/*設定動畫參數*/
+#con div:first-child {
+  animation: odkz 8s linear infinite;
+  /*等於下面這段
+  animation-name: odkz;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;*/
+}
+
+/*設定第一個背景色(黃色系)*/
+#con div:first-child div {
+  background:#fff100;
+}
+/*設定第二個背景色*/
+#con div:nth-child(2) div {
+  background:#eea514;
+}
+/*設定第三個背景色*/
+#con div:nth-child(3) div {
+  background:#ee6a14;
+}
+/*設定第四個背景色*/
+#con div:last-child div {
+  background:#ee3514;
+}
+
+/*參照https://www.w3schools.com/css/css3_animations.asp*/
+@keyframes odkz {
+  0% {margin-top: -360px;}
+  3% {margin-top: -280px;}
+  25% {margin-top: -280px;}
+  28% {margin-top: -187px;}
+  50% {margin-top: -187px;}
+  53% {margin-top: -95px;}
+  75% {margin-top: -95px;}
+  78% {margin-top: -2px;}
+  99.99% {margin-top: -2px;}
+  100% {margin-top: -360px;}
+}
+
+/*簽名檔*/
+#sign {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#e2e2e0;
+  margin-top:200px;
+}
